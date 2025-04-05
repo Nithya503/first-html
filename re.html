@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Royal Enfield</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin:0;
+        }
+        .header{
+            background-color:black;
+            height:72px;
+            display:flex;
+            flex-direction:row;
+            justify-content: space-between;
+            align-items: center;
+            
+        }
+        .z{
+          height:200px;
+          width:200px;
+        }
+      .b{
+        display:flex;
+        margin-right:200px;
+        color:rgb(243, 243, 245)
+       
+      }
+      .q ,.w,.e,.r,.t,.y,.u{
+        color:white;
+        background-color:rgb(8, 8, 8);
+        position:relative;
+        display:flex;
+        <!-- justify-content: center;
+        align-items: center; -->
+        margin-right:20px;
+        font-size:small;
+        border:none;
+      }
+          
+      .q:hover .i ,.w:hover .o,.e:hover .p,.r:hover .s,.t:hover .d,.y:hover .f,.u:hover .g{
+        opacity:1;
+        cursor: pointer;
+      }
+      .q:hover,.w:hover,.e:hover,.r:hover,.t:hover,.y:hover,.u:hover{
+        color:rgb(202, 44, 44);
+        cursor: pointer;
+      }
+      .q .i,.o,.p,.s,.d,.f,.g{
+        border:0;
+        position:absolute;
+        padding-top :5px;
+        padding-bottom:4px;
+        padding-right:15px;
+        padding-left:15px;
+        opacity:0;
+        background-color:rgb(247, 245, 245);
+        top:20px;
+        color:black;
+        pointer-events: none;
+        white-space: nowrap;
+      }
+      
+
+      .c{
+        color:rgb(245, 245, 247)
+      }
+     .ii{
+        height:27px;
+        margin-left:14px;
+        width:27px;
+     }
+     .c{
+        display:flex;
+        align-items: center;
+     }
+    .middle{
+      position:relative;
+    }
+    .middle .wrapper{
+      width:100vw;
+      height:100vh;
+      margin :0.3rem auto;
+      overflow: hidden;
+
+    } 
+    .middle .wrap-holder{
+      display:grid;
+      grid-template-columns: repeat(4,100%);
+      height:100%;
+      width:100%;
+      animation:slider 30s ease-in-out infinite alternate;
+    }
+    .middle #i1{
+      background-image: url(h3.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+    .middle #i2{
+      background-image: url(h5.jpeg);
+      background-position: center;
+      background-size: cover;
+    }
+    .middle #i3{
+      background-image: url(h4.avif);
+      background-position: center;
+      background-size: cover;
+    }
+    .middle .button-hold .button{
+      background-color: aliceblue;
+      width:15px;
+      border-radius: 15px 
+      dispay:inline-block;
+      margin: 3rem;
+    }
+    .middle .button-hold{
+      position:absolute;
+      left:45%;
+      bottom :0%;
+    }
+    .button:hover{
+      box-shadow: 0 0 4px 7px blue;
+    }
+    @keyframes slider{
+      0%{transform:translateX(0%);}
+      10%{transform:translateX(-100%);}
+      20%{transform:translateX(-100%);}
+      30%{transform:translateX(-200%);}
+      40%{transform:translateX(-200%);}
+      50%{transform:translateX(-200%);}
+      60%{transform:translateX(-300%);}
+      70%{transform:translateX(-300%);}
+      80%{transform:translateX(-200%);}
+      90%{transform:translateX(-100%);}
+      100%{transform:translateX(0%);}
+    }
+    </style>
+</head>
+<body>
+    <div class = "header">
+        <div class = "a"> <img class = "z" src = "logo.svg"></div>
+        <div class = "b">
+            <button class = "q">Motorcycles <div class ="i"> Motorcycles</div></button>
+            <button class = "w">Shops  Shops</div></button>
+            <button class = "e">Service <div class ="p"> Service</div></button>
+            <button class = "r">Rides <div class ="s"> Rides</div></button>
+            <button class = "t">Our World <div class ="d"> Our World</div></button>
+            <button class = "y">Support <div class ="f"> Support</div></button>
+            <button class = "u">Locate Us <div class ="g"> Locate Us</div></button>
+            </div>
+       <div class = "c">
+             <div> Login</div>
+             <div><img class = "ii" src = "images/am.jpg"></div>
+        </div>
+
+    </div>
+    <div class = "middle">
+     <div class = "wrapper">
+      <div class = "wrap-holder">
+        <div id = "i1"></div>
+        <div id = "i2"></div>
+        <div id = "i3"></div>
+      
+      </div>
+      <div style = "font-size:larger; position:absolute;background-color:rgb(59, 59, 59);color:white;padding:3px 5px;
+      right:600px;top:300px; cursor:pointer;
+      ">Explore &gt;</span></div>
+     </div> 
+     <div class = "button-hold">
+      <a href = "#i1" class = "button"></a>
+      <a href = "#i2" class = "button"></a>
+      <a href = "#i3" class = "button"></a>
+     </div>
+    </div>
+    
+</body>
+</html>
